@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estiloEncabezadoGeneral.css" media="(min-width:600px)">
+    <link rel="stylesheet" href="estilosPaginaCrear.css" media="(min-width:600px)">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-------Inicio Header--->
+    <header>
+
+    </header>
+    <!-------FIN Header--->
+
+    <!------------------------Inicio Menu Navegacion--------------------------->
+    <h1>CREAR</h1>
+    <nav>
+        <div class="menuNavegacionPrincipal">
+            <div class="menuNavegacionPrincipal_contenedorLogo">
+                <img class="menuNavegacionPrincipal_logoProyecto" src="../imagenes/logo.png" alt="logo" >
+            </div>
+            <div class="menuNavegacionPrincipal_contenedorLinksNavegacion"> 
+                <ul class="menu_navegacion">
+                    <li class="itemsMenuNavegacion" onclick="window.location.href='../PaginaPrincipal/index.html'">
+                        <a href="../PaginaPrincipal/index.html">Inicio</a>
+                    </li>
+                    <li class="itemsMenuNavegacion distinto" onclick="window.location.href='#'">
+                        <a href="#">Crear</a>
+                    </li>
+                    <li class="itemsMenuNavegacion" onclick="window.location.href='../PaginaUnirse/paginaUnirse.html'">
+                        <a href="../PaginaUnirse/paginaUnirse.html">Unirse</a>
+                    </li>
+                    <li class="itemsMenuNavegacion" onclick="window.location.href='../PaginaPresentacion/index.html'" >
+                        <a href="../PaginaPresentacion/index.html" >Sobre Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+             
+        </div>
+    </nav>
+    <!-------------------------Fin Menu Navegacion---------------------------->
+    <main>
+        <div id="tituloMenuCrear">
+            <p>Bienvenido al menu crear</p>
+        </div>
+        <div class="textoMenuCrear">
+            <p>
+                En esta seccion se puede crear el aula que usted desea, pero antes es necesario llenar la siguiente
+                informacion:
+                
+            </p>
+            
+            
+        </div>
+        <form>
+            <div class="imagen1_MenuCrear">
+                <img id="form_imagen1" src="" alt="logo1" >
+                <script src="imagenesDOM1.js"></script>  
+            </div>
+            <div class="formularioCrear">
+                <div class="form_ingresoNombres">
+                    <p>Ingrese su cedula</p>
+                    <input type="text" id="ingresoCedula" placeholder="Escribe tus nombres aquí" >
+                </div>
+                <div class="form_ingresoNombres">
+                    <p>Ingrese sus nombres Completos</p>
+                    <input type="text" id="ingresoNombres" placeholder="Escribe tus nombres aquí" >
+                </div>
+                <div class="form_ingresoNombres">
+                    <p>Ingrese sus apellidos Completos</p>
+                    <input type="text" id="ingresoApellidos" placeholder="Escribe tus apellidos aquí" >
+                </div>
+                <div class="form_ingresoNombres">
+                    <p>Ingrese su edad</p>
+                    <input type="number" id="ingresoEdad" placeholder="Escribe tu edad aquí" >
+                </div>
+                <div class="form_ingresoNombres">
+                    <p>¿Es usted profesor?</p>
+                    <input type="checkbox" id="profesor">
+                </div>
+                <div class="form_ingresoNombres">
+                    <p>Las siguientes preguntas son opcionales</p>
+                    <p>El nombre de su institucion</p>
+                    <input type="text" id="ingresoApellidos" placeholder="Escribe tus apellidos aquí" >
+                    <p>El nombre de su institucion</p>
+                    <input type="text" id="ingresoApellidos" placeholder="Escribe tus apellidos aquí" >
+                    
+                </div> 
+                
+                <button id="botonValidarForm">Validar Datos</button>
+                <div id="contenedorErroresForm" style="display:block;">
+                        Aqui se muestra cuales valores han sido mal colocados
+                </div>
+
+
+                <button id="botonAbrirMenuPreguntas">Seleccionar las Preguntas</button>
+                
+            </div>
+            
+            <div class="imagen2_MenuCrear">
+                <img class="form_imagen2" src="../imagenes/imageAprendizaje2.jpg" alt="logo2" >
+            </div>
+            
+            
+        </form>
+        <div id="seleccionPreguntas" style="display:none;">
+            Seleccione de la siguiente lista cuales preguntas desea
+            <ul>
+                <li>
+                    <p>Pregunta1</p>
+                </li>
+                <li>
+                    <p>Pregunta2</p>
+                </li>
+                <li>
+                    <p>Pregunta3</p>
+                </li>
+                <li>
+                    <p>Pregunta4</p>
+                </li>
+                <li>
+                    <p>Pregunta5</p>
+                </li>
+                <li>
+                    <p>Pregunta6</p>
+                </li>
+            </ul>
+            <button id="botonCerrarMenuPreguntas">!Crear aula!</button>
+        </div>
+        
+            
+    </main>
+</body>
+<script src="./scriptBotonSeleccionPreguntas.js"></script>
+<script src="./scriptBotonValidacion.js"></script>
+<script src="./scriptBotonCrearAula.js"></script>
+</html>

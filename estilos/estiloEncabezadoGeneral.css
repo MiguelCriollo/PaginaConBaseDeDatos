@@ -1,0 +1,124 @@
+/*---------------GENERAL CLASSES------------------ */
+html{
+    height: 100%;
+    padding: 0;
+    margin: 10px;
+    background-color: rgb(199, 197, 139);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to right, #87cefa, #f5f5f5);
+}
+main{
+ 
+    height: 100%;
+}
+body{
+    height: 500px;
+}
+
+/*---------------FIN GENERAL CLASSES------------------ */
+
+
+/*----------------INICIO NAV--------- */
+
+.menuNavegacionPrincipal{ 
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    
+}
+/*--------------Para mostrar logo------------*/
+.menuNavegacionPrincipal_contenedorLogo{
+    width: 10%;
+}
+
+.menuNavegacionPrincipal_logoProyecto{
+    width: 100%;
+    height: 100%;
+    
+}
+/*--------------------------------------*/
+/*--------------------Mostrar lista de navegacion------------------*/
+.menuNavegacionPrincipal_contenedorLinksNavegacion{
+    display: flex;
+    justify-content: center;
+    width:90%;
+    
+}
+
+.menu_navegacion{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #023c5f, #f5f5f5);
+    justify-content: space-around;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+}
+.menuNavegacionPrincipal_contenedorLinksNavegacion li{
+    background: linear-gradient(to left, #015082, #f5f5f5);
+    background-color: aqua;
+    font-size: 200%;
+    cursor: pointer;
+    
+}
+
+
+.itemsMenuNavegacion{
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+    border-radius: 10px;
+
+
+}
+.itemsMenuNavegacion:hover{
+    background-color: blue;
+    border-radius: 0px;
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    background-color: yellow;
+}
+
+.itemsMenuNavegacion.distinto{
+    
+}
+.menuNavegacionPrincipal_contenedorLinksNavegacion a {
+    text-decoration: none;
+  }
+
+/*--------------------------------------*/
+
+/*---------------FIN NAV------------------ */
+
+/*---------------INICIO MAIN------------------ */
+
+
+
+
+/*---------------FINAL MAIN------------------ */
+
+ @-webkit-keyframes flip-vertical-left {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(-180deg);
+              transform: rotateY(-180deg);
+    }
+  }
+  @keyframes flip-vertical-left {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(-180deg);
+              transform: rotateY(-180deg);
+    }
+  }
+  
